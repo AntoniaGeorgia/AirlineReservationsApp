@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_card">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/blue_main">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✈ SkyBook"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bine ai revenit!"
+            android:textSize="16sp"
+            android:textColor="@color/blue_pale"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Form -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="13sp"
+            android:textColor="@color/text_gray"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/etEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="exemplu@email.com"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bg_btn_outline"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parola"
+            android:textSize="13sp"
+            android:textColor="@color/text_gray"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/etPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="••••••••"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_btn_outline"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Autentificare"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/blue_main"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            app:cornerRadius="14dp" />
+
+        <TextView
+            android:id="@+id/tvGoToRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Nu ai cont? Inregistreaza-te aici"
+            android:textColor="@color/blue_main"
+            android:textStyle="bold"
+            android:padding="8dp" />
+
+    </LinearLayout>
+</LinearLayout>

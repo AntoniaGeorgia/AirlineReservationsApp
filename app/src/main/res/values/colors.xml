@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta albastru caraibe -->
+    <color name="blue_dark">#006D77</color>
+    <color name="blue_main">#0E9AAB</color>
+    <color name="blue_light">#2EC4C4</color>
+    <color name="blue_pale">#B8F0F0</color>
+
+    <!-- Suport -->
+    <color name="white">#FFFFFF</color>
+    <color name="text_dark">#111111</color>
+    <color name="dark_text">#111111</color>
+    <color name="text_gray">#888888</color>
+    <color name="gray_text">#888888</color>
+    <color name="bg_card">#F0FAFA</color>
+
+    <color name="divider">#D0EEEE</color>
+    <!-- Status -->
+    <color name="status_paid">#4CAF50</color>
+    <color name="status_checkin">#0E9AAB</color>
+    <color name="status_boarded">#9C27B0</color>
+    <color name="status_cancelled">#F44336</color>
+    <color name="status_pending">#FF9800</color>
+
+    <!-- Alias-uri pentru compatibilitate -->
+    <color name="airline_blue">#006D77</color>
+    <color name="airline_gold">#FFD700</color>
+    <color name="seat_occupied">#808080</color>
+    <color name="seat_available">#0E9AAB</color>
+    <color name="seat_selected">#FFA500</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="brand_green">#0E9AAB</color>
+    <color name="brand_green_dark">#006D77</color>
+    <color name="brand_green_light">#B8F0F0</color>
+    <color name="medium_teal">#0E9AAB</color>
+    <color name="dark_teal">#006D77</color>
+    <color name="very_light_teal">#B8F0F0</color>
+</resources>

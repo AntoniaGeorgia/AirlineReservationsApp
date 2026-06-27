@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AirlineReservationsApp"
+        android:enableOnBackInvokedCallback="true"
+        android:usesCleartextTraffic="true"
+        android:name=".SkyBookApp"
+         >
+
+
+
+        <activity android:name=".FlightSearchActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" android:exported="false" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SeatSelectionActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PassengerDetailsActivity"
+            android:exported="false" />
+
+        <activity android:name=".BoardingPassActivity" android:exported="false" />
+
+        <activity android:name=".PaymentActivity" />
+
+        <activity android:name=".GlobeActivity" android:exported="false" />
+
+        <activity android:name=".WeekendTripActivity" />
+
+        <activity android:name=".MyBookingsActivity" />
+        <activity android:name=".BookingDetailActivity" />
+
+        <activity android:name=".AdminActivity" android:exported="false" />
+        <activity android:name=".SendModificationRequestActivity" android:exported="false" />
+
+        <activity android:name=".ClassUpgradeActivity" android:exported="false" />
+        <activity android:name=".BaggageSelectionActivity" android:exported="false" />
+        <activity android:name=".RandomSeatBookingActivity" android:exported="false" />
+
+        <activity android:name=".TravelerProfileActivity"/>
+        <activity android:name=".CityDiscoveryActivity"/>
+        <activity android:name=".CompatibleTravelersActivity"/>
+        <activity android:name=".PrivateChatActivity"/>
+        <activity android:name=".InboxActivity"/>
+        <activity android:name=".ExploreActivity"/>
+
+        <activity android:name=".RebookingActivity" android:exported="false" />
+    </application>
+
+</manifest>

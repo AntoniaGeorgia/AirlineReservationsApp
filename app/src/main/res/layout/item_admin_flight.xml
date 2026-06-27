@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="@color/bg_card"
+    android:layout_marginBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvFlightNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark" />
+
+        <TextView
+            android:id="@+id/tvFlightRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_dark" />
+
+        <TextView
+            android:id="@+id/tvFlightTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_gray" />
+
+        <TextView
+            android:id="@+id/tvFlightAircraft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_gray" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAssignGate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poartă"
+        android:backgroundTint="#00897B"
+        android:textColor="#FFFFFF"
+        android:layout_marginEnd="4dp" />
+
+    <Button
+        android:id="@+id/btnFlightStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:backgroundTint="#FF8F00"
+        android:textColor="#FFFFFF"
+        android:layout_marginEnd="4dp" />
+
+    <Button
+        android:id="@+id/btnDeleteFlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Șterge"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

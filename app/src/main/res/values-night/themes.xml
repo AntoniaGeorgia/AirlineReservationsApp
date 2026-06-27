@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AirlineReservationsApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary Brand Colors -->
+        <item name="colorPrimary">@color/blue_light</item>
+        <item name="colorOnPrimary">@color/text_dark</item>
+        <item name="colorPrimaryContainer">@color/blue_dark</item>
+        <item name="colorOnPrimaryContainer">@color/blue_pale</item>
+
+        <!-- Secondary Brand Colors -->
+        <item name="colorSecondary">@color/blue_main</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/blue_dark</item>
+        <item name="colorOnSecondaryContainer">@color/blue_pale</item>
+
+        <!-- Tertiary Colors -->
+        <item name="colorTertiary">@color/blue_pale</item>
+        <item name="colorOnTertiary">@color/text_dark</item>
+
+        <!-- Background and Surface -->
+        <item name="android:windowBackground">@color/text_dark</item>
+        <item name="colorSurface">@color/text_dark</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorSurfaceVariant">@color/blue_dark</item>
+        <item name="colorOnSurfaceVariant">@color/blue_pale</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/text_dark</item>
+    </style>
+</resources>

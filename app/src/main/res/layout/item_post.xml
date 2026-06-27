@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    android:layout_margin="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Categorie -->
+        <TextView
+            android:id="@+id/tvPostCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#00897B"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Conținut -->
+        <TextView
+            android:id="@+id/tvPostContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#222222"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Poze -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:id="@+id/layoutPostPhotos"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:orientation="horizontal"/>
+
+        </HorizontalScrollView>
+
+        <!-- Buton adaugă poză -->
+        <Button
+            android:id="@+id/btnAddPhotoToPost"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="📷 Adaugă poză"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        <!-- Rating -->
+        <TextView
+            android:id="@+id/tvPostRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#FF9800"
+            android:layout_marginBottom="4dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBarPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Autor -->
+        <TextView
+            android:id="@+id/tvPostAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#888888"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

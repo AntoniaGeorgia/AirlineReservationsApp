@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_card">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvSeatTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alege locul dorit"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@color/blue_dark"
+        android:textColor="@color/white"/>
+
+    <!-- Chips clasă -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipEconomy"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Economy"
+            app:chipBackgroundColor="@color/blue_pale"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipPremiumEconomy"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Premium Economy"
+            app:chipBackgroundColor="@color/blue_pale"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipBusiness"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business"
+            app:chipBackgroundColor="@color/blue_pale"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- Beneficii clasă -->
+    <TextView
+        android:id="@+id/tvClassInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray"
+        android:background="@color/divider"
+        android:text="✓ Loc standard  ✓ Bagaj de mână inclus"/>
+
+    <!-- Legendă -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center">
+
+        <View android:layout_width="14dp" android:layout_height="14dp"
+            android:background="@color/airline_gold" android:layout_marginEnd="3dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Business" android:textSize="10sp" android:layout_marginEnd="10dp"/>
+
+        <View android:layout_width="14dp" android:layout_height="14dp"
+            android:background="@color/blue_light" android:layout_marginEnd="3dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Premium" android:textSize="10sp" android:layout_marginEnd="10dp"/>
+
+        <View android:layout_width="14dp" android:layout_height="14dp"
+            android:background="@color/white"
+            android:layout_marginEnd="3dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Economy" android:textSize="10sp" android:layout_marginEnd="10dp"/>
+
+        <View android:layout_width="14dp" android:layout_height="14dp"
+            android:background="@color/seat_selected" android:layout_marginEnd="3dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Selectat" android:textSize="10sp" android:layout_marginEnd="10dp"/>
+
+        <View android:layout_width="14dp" android:layout_height="14dp"
+            android:background="@color/seat_occupied" android:layout_marginEnd="3dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Ocupat" android:textSize="10sp"/>
+    </LinearLayout>
+
+    <!-- Harta avion scrollabilă -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSeats"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:clipToPadding="false"/>
+
+    <!-- Footer preț + confirmare -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@color/white"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/tvPriceDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selectează un loc"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/blue_main"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnConfirmReservation"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Confirmă Rezervarea"
+            android:backgroundTint="@color/blue_main"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnSkipSeat"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Continuă fără loc ales"
+            android:backgroundTint="@color/text_gray"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

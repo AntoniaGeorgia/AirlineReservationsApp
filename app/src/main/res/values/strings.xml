@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AirlineReservationsApp</string>
+    <string name="flight_number_placeholder">Zbor: --</string>
+    <string name="default_time">--:--</string>
+    <string name="default_duration">0h 0m</string>
+    <string name="default_origin">OTP</string>
+    <string name="default_destination">LHR</string>
+    <string name="flight_type_direct">Direct</string>
+    <string name="default_price">0 EUR</string>
+    <string name="btn_reserve">Rezervă</string>
+    <string name="route_format">✈ %1$s  →  %2$s</string>
+    <string name="no_flights_available">Nu exista zboruri disponibile</string>
+    <string name="flights_load_error">Eroare la incarcarea zborurilor</string>
+    <string name="user_greeting">&#128100; %1$s</string>
+    <string name="logout_title">Deconectare</string>
+    <string name="logout_message">Esti sigur ca vrei sa te deconectezi?</string>
+    <string name="logout_confirm">Da</string>
+    <string name="logout_cancel">Anuleaza</string>
+    <string name="logout_btn">Logout</string>
+    <string name="my_flights">&#9992; Zborurile mele</string>
+    <string name="no_bookings">Nu ai rezervari active</string>
+    <string name="back">Inapoi</string>
+</resources>

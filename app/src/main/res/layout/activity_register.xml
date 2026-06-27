@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="@color/bg_card">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creează cont"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue_dark"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Nume complet"
+        android:inputType="textPersonName"
+        android:background="@drawable/bg_btn_outline"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Adresă email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/bg_btn_outline"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Parolă"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_btn_outline"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Înregistrare"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="@color/blue_main"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvLoginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ai deja cont? Conectează-te"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/blue_main"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+</LinearLayout>

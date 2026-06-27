@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#00897B"
+        android:paddingStart="8dp">
+
+        <ImageButton
+            android:id="@+id/btnBackCity"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/tvCityName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnFindTravelers"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="👥 Călători"
+            android:textSize="12sp"
+            android:backgroundTint="#004D40"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+
+    <!-- Banner solo -->
+    <LinearLayout
+        android:id="@+id/bannerSolo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0F2F1"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="✈ Călătorești singur spre această destinație?"
+            android:textSize="13sp"
+            android:textColor="#004D40"/>
+
+        <Button
+            android:id="@+id/btnFindCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Găsește companie"
+            android:textSize="11sp"
+            android:backgroundTint="#00897B"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Categorii scroll orizontal -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:background="#FFFFFF"
+        android:elevation="2dp">
+
+        <LinearLayout
+            android:id="@+id/layoutCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:gravity="center_vertical"/>
+
+    </HorizontalScrollView>
+
+    <!-- Posts grid -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPosts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/tvNoPosts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Nimeni nu a postat încă.\nFii primul care împărtășește o experiență!"
+        android:gravity="center"
+        android:textColor="#888888"
+        android:visibility="gone"/>
+
+    <!-- Buton adaugă -->
+    <Button
+        android:id="@+id/btnAddPost"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="+ Adaugă recomandare"
+        android:backgroundTint="#00897B"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_margin="8dp"/>
+
+</LinearLayout>

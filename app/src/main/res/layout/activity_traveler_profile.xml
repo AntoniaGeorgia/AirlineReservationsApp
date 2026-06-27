@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#00897B">
+
+            <ImageButton
+                android:id="@+id/btnBackProfile"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profilul meu de călător"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivProfilePhoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/btnPickPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Schimbă poza"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Stil calatorie -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cum călătorești de obicei?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgTravelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbSolo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✈ Solo"
+                android:checked="true"
+                android:layout_marginEnd="16dp"/>
+
+            <RadioButton
+                android:id="@+id/rbGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👥 Grup"
+                android:layout_marginEnd="16dp"/>
+
+            <RadioButton
+                android:id="@+id/rbCouple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💑 Cuplu"/>
+        </RadioGroup>
+
+        <!-- Interese -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ce te interesează?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/cbFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🍕 Mâncare și restaurante"/>
+
+        <CheckBox
+            android:id="@+id/cbNightlife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎉 Petreceri"/>
+
+        <CheckBox
+            android:id="@+id/cbSightseeing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏛 Obiective turistice"/>
+
+        <CheckBox
+            android:id="@+id/cbNature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌿 Natură"/>
+
+        <CheckBox
+            android:id="@+id/cbShopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🛍 Shopping"/>
+
+        <CheckBox
+            android:id="@+id/cbCulture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎭 Cultură și artă"/>
+
+        <!-- Bio -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Despre tine (opțional)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etBio"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Ex: Îmi place să explorez orașe noi, să încerc mâncare locală..."
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vârstă"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ex: 25"
+            android:inputType="number"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limbi vorbite"
+            android:textSize="14sp"
+            android:textColor="#888888" />
+
+        <EditText
+            android:id="@+id/etLanguages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ex: RO, EN, FR"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orașe planificate"
+            android:textSize="14sp"
+            android:textColor="#888888" />
+
+        <EditText
+            android:id="@+id/etPlannedCities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ex: Edinburgh, Glasgow, Inverness"
+            android:layout_marginBottom="12dp" />
+
+        <CheckBox
+            android:id="@+id/cbOpenToGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✈ Accept să călătoresc cu alți oameni"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Salvează profilul"
+            android:backgroundTint="#00897B"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>
